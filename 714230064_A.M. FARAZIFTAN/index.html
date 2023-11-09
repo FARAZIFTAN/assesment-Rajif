@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Buku</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-500">
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <nav class="bg-gradient-to-r from-gray-900 to-gray-500 to-gray-500 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-2xl font-bold">Toko Buku</a>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-white">Home</a></li>
+        <li><button onclick="Statement()" class="no-underline text-white px-2">About</button>
+        <li><button onclick="AritmatikaSyntax()" class="no-underline text-white px-2">Services</button>
+        <li><a href="#" class="text-white">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/animate.css@4.1.1"></script>
+</body>
+  <div class="container mx-auto mt-8">
+    <h1 class="text-3xl font-semibold mb-6 text-center">Selamat Datang di Toko Buku Kami</h1>
+    <p class="font-semibold">Selamat datang di Toko Buku "Pustaka Ceria"! Kami bangga menyajikan berbagai koleksi buku yang akan memenuhi segala selera dan kebutuhan literasi Anda. Dari karya-karya sastra klasik hingga buku-buku terkini yang sedang tren, Pustaka Ceria siap mengantarkan Anda dalam petualangan literer yang tak terlupakan.
+
+    </p>
+    <p id="desc"></p>
+    <div class="mt-5">
+      <button id="btn" onclick="Paragrafchange()">clik</button>
+    </div>
+<br>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Buku 1 -->
+      <div class="bg-orange-200 rounded-lg overflow-hidden shadow-lg">
+        <img class="w-full h-64 object-cover" src="https://id-test-11.slatic.net/p/cf359be95b5a5cdfe80e41ca8cc9e4ba.jpg" alt="Buku 1">
+        <div class="p-6">
+          <h2 class="font-bold text-xl mb-2">Pencerahan Sufi</h2>
+          <p class="text-gray-700 text-base">Penulis: Syekh Abdul Qadir Jaelani</p>
+          <p class="text-gray-700 text-base">Harga: $20</p>
+          <button class="mt-4 bg-blue-500 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+
+      <!-- Buku 2 -->
+      <div class="bg-slate-300 rounded-lg overflow-hidden shadow-lg">
+        <img class="w-full h-64 object-cover mt-auto" src="https://i0.wp.com/www.lawwana.com/wp-content/uploads/2021/05/Konten-Web.jpg?fit=1080%2C1080&ssl=1" alt="">
+        <div class="p-6">
+          <h2 class="font-bold text-xl mb-2">Mengulik Cara Sufi </h2>
+          <p class="text-gray-700 text-base">Penulis: Ahmad Umam Aufi</p>
+          <p class="text-gray-700 text-base">Harga: $25</p>
+          <button class="mt-4 bg-blue-500 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+
+      <!-- Buku 3 -->
+      <div class="bg-amber-100 rounded-lg overflow-hidden shadow-lg">
+        <img class="w-full h-64 object-cover" src="https://media.karousell.com/media/photos/products/2023/7/14/buku_sufi_talks_by_robert_frag_1689332587_9d088150_progressive.jpg" alt="Buku 3">
+        <div class="p-6">
+          <h2 class="font-bold text-xl mb-2">Jalaluddin Rumi</h2>
+          <p class="text-gray-700 text-base">Penulis: Jalaluddin Rumi</p>
+          <p class="text-gray-700 text-base">Harga: $18</p>
+          <button class="mt-4 bg-blue-500 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">
+            Beli Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+<script src="script.js"></script>
